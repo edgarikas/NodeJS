@@ -1,0 +1,31 @@
+###
+GET http://localhost:5002/api/movies
+
+
+###
+GET http://localhost:5002/api/users/636a6b49e057feaaea8fb70a
+
+
+###
+POST http://localhost:5002/api/movies
+Content-Type: application/json
+
+{
+    "userId": "636a6b49e057feaaea8fb70a",
+    "movie_name": "Apocalipse",
+    "movie_category": "Action",
+    "movie_rent_price": "11",
+    "is_available": true
+}
+
+
+###
+POST http://localhost:5002/api/users/signup
+Content-Type: application/json
+
+{
+    "name_surname": "Mark Copl",
+    "email": "markc332@gmail.com",
+    "password": "1234"
+}
+

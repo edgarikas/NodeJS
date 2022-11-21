@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My account page | Rent a movie</title>
+    <!-- Custom JS -->
+    <script src="../scripts/modules/nav.js" defer></script>
+    <script src="../scripts/my-account.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div>Logo</div>
+      <nav><!-- created with nav.js--></nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 id="current-user"></h1>
+        <button id="user-logout-button">Logout</button>
+      </section>
+
+      <section>
+        <h3>Add movie for rent</h3>
+        <form id="add-movie-form">
+          <div>
+            <label for="movie_name">Movie name</label>
+            <input type="text" id="movie_name" />
+          </div>
+          <div>
+            <label for="movie_category">Movie category</label>
+            <input type="text" id="movie_category" />
+          </div>
+          <div>
+            <label for="movie_rent_price">Movie rent price</label>
+            <input type="text" id="movie_rent_price" />
+          </div>
+          <div>
+            <input type="submit" value="Add movie" />
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h3>My movies for rent list</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Movie name</th>
+              <th>Movie category</th>
+              <th>Movie rent price</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-for-user-movies"></tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>My ordered movies</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Movie name</th>
+              <th>Movie category</th>
+              <th>Movie rent price</th>
+              <th>Returning</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-for-user-orders"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>&copy; All rights reserverd</footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+###
+POST http://localhost:5002/api/users/signup
+Content-Type: application/json
+
+{
+    "name_surname": "Mark Copl",
+    "email": "markc332@gmail.com",
+    "password": "1234"
+}
+
+
+### 
+PUT http://localhost:5001/api/movies/636a8d71b5ba632f319fa937
+Content-Type: application/json
+
+{
+    "movieOwnerId": "636a9d32b685e403cb48ecc1",
+    "movie_name": "loooo",
+    "movie_category": "Drama",
+    "movie_rent_price": "4" 
+}

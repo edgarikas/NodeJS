@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup/login page | Rent a movie</title>
+    <!-- Custom JS -->
+    <script src="../scripts/modules/nav.js" defer></script>
+    <script src="../scripts/signup-login.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div>Logo</div>
+      <nav><!-- created with nav.js--></nav>
+    </header>
+
+    <main>
+      <section><h1>Signup/login page</h1></section>
+      <section>
+        <h2>Login</h2>
+        <form id="login-form">
+          <div>
+            <label for="login_email">Email</label>
+            <input type="email" id="login_email" />
+          </div>
+          <div>
+            <label for="login_password">Password</label>
+            <input type="password" id="login_password" />
+          </div>
+          <div><input type="submit" value="Login" /></div>
+        </form>
+      </section>
+      <section>
+        <h2>Signup</h2>
+        <form id="signup-form">
+          <div>
+            <label for="signup_name_surname">Name and Surname</label>
+            <input type="text" id="signup_name_surname" />
+          </div>
+          <div>
+            <label for="signup_email">Email</label>
+            <input type="email" id="signup_email" />
+          </div>
+          <div>
+            <label for="signup_password">Password</label>
+            <input type="password" id="signup_password" />
+          </div>
+          <div>
+            <input type="submit" value="Signup" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; All rights reserverd</footer>
+  </body>
+</html>
